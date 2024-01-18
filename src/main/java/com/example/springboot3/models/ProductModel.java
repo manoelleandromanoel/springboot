@@ -15,38 +15,38 @@ import org.springframework.hateoas.RepresentationModel;
 @Table(name = "TB_PRODUCTS")
 public class ProductModel extends RepresentationModel<ProductModel> implements Serializable {
 
-	@Serial
-	private static final long serialVersionUID = 1L;
+  @Serial
+  private static final long serialVersionUID = 1L;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private UUID uuid;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private UUID uuid;
 
-	private String name;
+  private String name;
 
-	private BigDecimal value;
+  private BigDecimal value;
 
-	public UUID getUuid() {
-		return uuid;
-	}
+  public UUID getUuid() {
+    return uuid;
+  }
 
-	public void setUuid(UUID uuid) {
-		this.uuid = uuid;
-	}
+  public void setUuid(UUID uuid) {
+    this.uuid = uuid;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public BigDecimal getValue() {
-		return value;
-	}
+  public BigDecimal getValue() {
+    return value;
+  }
 
-	public void setValue(BigDecimal value) {
-		this.value = value;
-	}
+  public void setValue(BigDecimal value) {
+    this.value = value;
+  }
 }
