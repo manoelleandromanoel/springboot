@@ -9,16 +9,3 @@ services:
       POSTGRES_PASSWORD: banco123
     ports:
       - "5432:5432"
-#  rabbitmq:
-#    image: rabbitmq:3-management
-#    container_name: bsr_rabbit_local
-#    volumes:
-#      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
-#    ports:
-#      - 5672:5672
-#      - 15672:15672
-#  redis:
-#    image: redis
-#    container_name: bsr_redis_local
-#    ports:
-#      - 6379:6379

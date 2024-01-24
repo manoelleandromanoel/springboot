@@ -11,7 +11,7 @@
   - Spring Hateoas
   - Records
 - Controle de dependências: [Maven](https://maven.apache.org/)
-- Google java style for intelliJ (intellij-java-google-style.xml)
+- Google java style para IntelliJ [intellij-java-google-style.xml](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml)
 
 ## Padrões
 - [RESTful](https://blog.caelum.com.br/rest-principios-e-boas-praticas/)

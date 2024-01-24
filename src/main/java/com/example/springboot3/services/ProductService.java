@@ -21,6 +21,7 @@ public class ProductService {
 
   private static final String PRODUCT_NOT_FOUND = "Product not found.";
   private static final String PRODUCT_DELETED_SUCCESSFULLY = "Product deleted successfully.";
+  private static final String PRODUCT_LIST = "Product List";
 
   @Autowired
   ProductRepository productRepository;
@@ -54,7 +55,7 @@ public class ProductService {
             ResponseEntity.status(HttpStatus.OK).body(
                 productModel.add(
                     linkTo(methodOn(ProductController.class).getAllProducts())
-                        .withRel("Product List"))
+                        .withRel(PRODUCT_LIST))
             )).orElseGet(
         () -> ResponseEntity.status(HttpStatus.NOT_FOUND).body(PRODUCT_NOT_FOUND));
   }
